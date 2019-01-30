@@ -7,12 +7,12 @@ This package provides several tools related to the [TAC DDI Corpus](https://bion
 2. Conversion of the processed corpus back to XML format required for submission. 
 3. In a process, construction of entities and their positions was performed taking into account their discontinuous and overlapping nature.
 
-# Characteristics of CoNLL data:
+Characteristics of CoNLL data:
 - each line - one word with its characteristics, separated by tabs. Characteristics include: part-of-speech tag and label
 - every sentence is separated from each other by empty line
 - in this case, labels follow BIOES (beginning-inside-outside-end-single (of) entity) format. 
 
-# Characteristics of XML data
+Characteristics of XML data
 - files are split into folders by drug names
 - discontinuous entites are split by '|', and spans by ';' characters. For example, in a sentence "Both alcohol and tadalafil , a PDE5 inhibitor , act as mild vasodilators" an entity would be "Both | act as | vasodilators" and the span for this entity "0 4;48 6;60 12".
 
